@@ -1,0 +1,59 @@
+<!-- {% extends "master.html" %} -->
+{% block content %}
+<!-- Banner -->
+	<div class="banner">
+	  <div class="container">
+	  <h1>File Upload</h1>
+	  </div>
+	  <div class="contact-arrow"></div>
+	  </div>
+	  <!-- End Banner -->
+  	<!-- Gray Bg -->
+	<div class="gray-bg">
+	<!-- Container -->
+	<div class="container">
+	<!-- Center Container -->
+	<div class="center-container">
+	<div class="contact-form">
+<form action="{{ basePath }}/file_upload" method="post" name="application" class="form" enctype="multipart/form-data">
+
+{% if errors %}
+  {% for error in errors %}
+    <p class="bg-danger">{{ error }}</p>
+  {% endfor %}
+{% endif %}
+
+{% if  output_text%}
+  {% for text in output_text %}
+    <p class="bg-danger">{{ text }}</p>
+  {% endfor %}
+{% endif %}
+
+<div class="alert alert-warning">
+<label>Notice</label>
+<p>
+Demo service for funzies. Who knows where your data is going?
+</p>
+</div>
+
+<div class="indicates-required text-center"></div>
+
+
+	<div class="form-group">
+		<label for="new_file">Send a Text File</label>
+		<input type="file" id="new_file" name="new_file">
+	</div>
+  <hr/>
+
+ <div class="clear text-center"><input type="submit" value="Submit" name="subscribe" class="button submit-button"></div>
+</form>
+</div>
+
+	</div>
+	</div>
+	<!-- End Center Container -->
+	</div>
+	<!-- End Container -->
+	</div>
+	<!-- End Gray Bg -->
+{% endblock %}
