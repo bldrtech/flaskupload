@@ -47,13 +47,10 @@ ol, ul{ padding:0;}
 li{list-style:outside;}
 img{ max-width:100%;}
 p{ margin-bottom:26px}
-.home .navbar-inverse .navbar-nav > li > a, .newsletter-form .email-text, .newsletter-form label, .banner h3, h5{ font-family: 'ProximaNova-Regular';}
+/*.home .navbar-inverse .navbar-nav > li > a, .newsletter-form .email-text, .newsletter-form label, .banner h3, h5{ font-family: 'ProximaNova-Regular';}
 .navbar-inverse .navbar-nav > li > a, h3, .learn-more, .footer-top, #footer #mc_embed_signup .button, .submit-btn, .three-colum .user-name, .hiring-link a, h4, h6, .subscription-form label{ font-family: 'ProximaNova-Bold';}
 .home-banner h1, .out-btn, .banner h1, .contact-btn, .mission-con h3, .post-right{ font-family: 'ProximaNova-Semibold';}
-.user-job, em{ font-family: 'ProximaNova-RegularIt';}
-
-.hiring-link ul:after, .tabs-con ul:after{font-size:0px; line-height:0px; height:0px; content:'.'; visibility:hidden; display:block; clear:both;}
-/*End Comman CSS*/
+.user-job, em{ font-family: 'ProximaNova-RegularIt';}*/
 
 /*Container*/
 .container-fluid{ width:100%; max-width:1130px;}
@@ -82,26 +79,26 @@ p{ margin-bottom:26px}
 .navbar-inverse .navbar-nav > li > a:hover{ color:#0b8dce;}
 
 /*Home Banner*/
-.home-banner{ color:#fff; background:#2f333e; padding:20px 0 0}
+/*.home-banner{ color:#fff; background:#2f333e; padding:20px 0 0}
 .home-banner h1{ font-size:46px; color:#fff; margin:0 0 14px; line-height:50px; text-align:left;}
 .home-banner p{ margin:0 0 44px; line-height:22px; font-size:16px;}
 .home-banner .left-block{ padding:55px 40px 0 34px;}
 .img-right{ background:url(../images/right-png.png) no-repeat right bottom; padding:0 146px 52px 0; width:50%; text-align:right;}
-
+/*
 /*Banner*/
-.banner{ text-align:center; color:#fff; padding:46px 0 20px; min-height:250px; background:#1a1a1a; position:relative;}
-.banner h1{ color:#fff; font-size:46px; margin:0 0 17px;}
+*.banner{ text-align:center; color:#fff; padding:16px 0 20px; min-height:80px; background:#1a1a1a; position:relative;}
+.banner h1{ color:#fff; font-size:36px; margin:0 0 17px;}
 .banner h3{ color:#fff; font-size:24px; margin:0;}
-
+/*
 /*Out Btn*/
 .out-btn{ font-size:18px; color:#fff; background:#0b8dce; padding:21px 31px; display:inline-block; border-radius:5px;}
 .out-btn:hover{ background:#ed1c24; color:#fff;}
 
 /*H1*/
-h1{ color:#616a7d; font-size:38px; line-height:50px; margin:0px 0 15px; text-align:center;}
+h1{ color:#616a7d; font-size:38px; line-height:42px; margin:0px 0 15px; text-align:center;}
 
 /*H1*/
-h2{ color:#616a7d; font-size:36px; line-height:42px; margin:0px 0 20px;}
+h2{ color:#616a7d; font-size:36px; line-height:36px; margin:0px 0 20px;}
 /*H3*/
 h3{ color:#616a7d; font-size:24px; line-height:24px; margin:0 0 26px;}
 
@@ -138,8 +135,8 @@ label {
   border: 0;
 }
 
-.submit-button{ font-size:18px; color:#fff; background:#0b8dce; padding:21px 29px; display:inline-block; border-radius:5px; border:0; margin:0; line-height:24px; font-weight:normal; height:auto; min-width:175px;}
-.submit-button:hover{ background:#ed1c24; color:#fff;}
+.submit-button{ font-size:16px; color:#fff; background:#0b8dce; padding:11px 19px; display:inline-block; border-radius:5px; border:0; margin:0; line-height:24px; font-weight:normal; height:auto; min-width:125px;}
+.submit-button:hover{ background:#003399; color:#fff;}
 
 hr {
   border-top: 1px solid #ddd;
