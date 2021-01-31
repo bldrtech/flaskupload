@@ -1,4 +1,0 @@
-Flask==0.12.2
-Werkzeug==0.13
-itsdangerous==0.24
-
