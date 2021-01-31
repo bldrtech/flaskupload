@@ -1,5 +1,5 @@
 /*Common CSS*/
-body{ word-spacing:-1px; color:#545e72; font-size:18px; font-family: 'ProximaNova-Regular'; line-height:24px;}
+body{ word-spacing:-1px; color:#545e72; font-size:18px; line-height:24px;}
 a:focus, a:hover{ outline:0; text-decoration:none;}
 ol, ul{ padding:0;}
 li{list-style:outside;}
