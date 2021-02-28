@@ -16,7 +16,7 @@ app.config['MAX_CONTENT_LENGTH'] = 10485760  # 10 MB
 class Upload(MethodView):
     @staticmethod
     def get():
-        return render_template("secure_upload.html", title='File Upload', basePath=basePath)
+        return render_template("upload.html", title='File Upload', basePath=basePath)
 
     @staticmethod
     def post():
@@ -40,9 +40,9 @@ class Upload(MethodView):
         else:
             errors.append("Missing File")
         if not errors and output_text is not None:
-            return render_template("secure_upload.html", title='File Received', output_text=output_text, basePath=basePath)
+            return render_template("upload.html", title='File Received', output_text=output_text, basePath=basePath)
         else:
-            return render_template("secure_upload.html", title='File Upload', errors=errors, basePath=basePath)
+            return render_template("upload.html", title='File Upload', errors=errors, basePath=basePath)
 
 
 app.add_url_rule("/file_upload", view_func=Upload.as_view('users'))
@@ -54,7 +54,7 @@ def send_static_asset(path):
 
 @app.route("/", methods=('GET',))
 def index():
-    return render_template("secure_upload.html", title='File Upload', basePath=basePath)
+    return render_template("upload.html", title='File Upload', basePath=basePath)
 
 if __name__ == "__main__":
     app.run(debug=True)
