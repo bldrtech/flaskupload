@@ -1,0 +1,15 @@
+{% block content %}
+
+{% if errors %}
+  {% for error in errors %}
+    {{ error }}
+  {% endfor %}
+{% endif %}
+
+{% if output_text %}
+	\{ {{ output_text }} \}
+{% else %}
+    \{
+	\}
+{% endif %}
+{% endblock %}

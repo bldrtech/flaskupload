@@ -73,10 +73,9 @@ class Upload(MethodView):
         else:
             errors.append("No accesses token provided. Hint: set header ")
         if not errors and output_text is not None:
-            return render_template("upload.html", title='File Received', output_text=output_text, basePath=basePath)
+            return render_template("empty.html", title='Output', output_text=output_text, basePath=basePath)
         else:
-            return render_template("upload.html", title='File Upload', output_text=output_text, errors=errors,
-                                   basePath=basePath)
+            return render_template("empty.html", title='Error', errors=errors, basePath=basePath)
 
 app.add_url_rule("/file_upload", view_func=Upload.as_view('users'))
 
